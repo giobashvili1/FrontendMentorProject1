@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "light";
+    src: url(./fonts/OpenSans-Light.ttf);
+}
+@font-face{
+    font-family: "regular";
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+.section1{
+    background-color: rgb(89, 89, 173);
+    background-image: url(./img/bg-desktop.svg);
+    padding-top: 50px;
+}
+.header{
+    max-width: 1340px;
+    margin-inline: auto;
+   
+}
+.header img{
+   width: 200px;
+}
+.container{
+    max-width: 1340px;
+    margin-inline: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.txt{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.txt h5{
+    font-size: 36px;
+    color: white;
+    font-family: "regular";
+    margin: 0;
+}
+.txt p{
+    font-size: 16px;
+    color: white;
+    font-family: "light";
+    letter-spacing: 2px;
+    margin: 0;
+}
+.txt button{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: "regular";
+    border: none;
+    color: rgb(110, 59, 110);
+}
+.icons{
+    max-width: 1340px;
+    margin-inline: auto;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 20px;
+}
+.icons img{
+    border-radius: 20px;
+}
+
+@media screen and (max-width:768px){
+    .section1{
+        padding: 50px;
+    }
+    .header{
+        max-width: 330px;
+        margin-inline: auto;
+    }
+    .container{
+        padding-top: 50px;
+        max-width: 330px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .photo img{
+        width: 100%;
+    }
+    .txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+        }
+    .txt h5{
+        font-size: 28px;
+    }
+    .txt p{
+        font-size: 12px;
+    }
+    .txt button{
+        margin-top: 25px;
+    }
+    .footer{
+        padding-top: 50px;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
